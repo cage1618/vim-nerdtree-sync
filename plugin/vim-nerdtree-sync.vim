@@ -17,6 +17,7 @@ function! s:syncTree()
       NERDTreeFind
       if bufname('%') =~# 'NERD_tree'
         setlocal nocursorline
+        setlocal nocursorcolumn
         wincmd p
       endif
     endtry
